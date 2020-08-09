@@ -65,7 +65,7 @@ export interface ActionBasis<Type extends string = string> {
 /** return an interface with payload only if it presents */
 export type PayloadBasis<
   Payload extends Object = undefined
-> = Payload extends undefined ? {} : { payload: Payload };
+> = Payload extends undefined ? {} : { payload: any };
 
 /** return an interface with meta only if it presents */
 export type MetaBasis<Meta extends Object = undefined> = Meta extends undefined
